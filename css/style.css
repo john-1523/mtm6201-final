@@ -1,1 +1,173 @@
-/* MOBILE-FIRST APPROACH */
+/* Custom Properties */
+:root {
+    --bs-primary: #AAB981;
+    --bs-secondary: #666C2E;
+    --bs-yellow: #F9B848;
+    --bs-orange: #E06233;
+}
+
+/* Custom CSS – Mobile-First Approach */
+
+/* Setting Fonts */
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, button, footer p {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+}
+
+/* Styling Buttons */
+.btn-solid-green {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 0.25em 1.5em;
+}
+
+.btn-solid-green:hover {
+    background-color: var(--bs-secondary);
+    box-shadow: 2px 2px 4px #000 inset;
+}
+
+.btn-solid-orange {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 0.25em 1.5em;
+}
+
+.btn-solid-orange:hover {
+    background-color: var(--bs-orange);
+    box-shadow: 2px 2px 4px #000 inset;
+}
+
+.btn-outline-green {
+    background-color: rgb(0, 0, 0, 0);
+    color: #000;
+    border: 2px solid #000;
+    padding: 0.25em 1.5em;
+}
+
+.btn-outline-green:hover {
+    background-color: var(--bs-secondary);
+    box-shadow: 2px 2px 4px #000 inset;
+}
+
+.btn-outline-orange {
+    background-color: rgb(0, 0, 0, 0);
+    color: #000;
+    border: 2px solid #000;
+    padding: 0.25em 1.5em;
+}
+
+.btn-outline-orange:hover {
+    background-color: var(--bs-orange);
+    box-shadow: 2px 2px 4px #000 inset;
+}
+
+/* Styling Header */
+.banner {
+    background-image: url(../images/banner-mobile.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 90vh;
+}
+
+header h1 {
+    color: var(--bs-yellow);
+    text-shadow: 2px 2px 4px #000;
+    margin-top: 60vh;
+}
+
+/* Styling "About" Section */
+.about img {
+    border: 4px solid var(--bs-yellow);
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Styling "Learn More" Section */
+.learn-more {
+    background-color: var(--bs-primary);
+    border: 4px solid var(--bs-secondary);
+    width: 110%;
+    height: 25vh;
+    margin-left: -4.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more .wrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more p {
+    font-size: 18px;
+}
+
+/* Styling "Services" Section */
+.web-design, .photography {
+    background-color: var(--bs-yellow);
+    border: 4px solid var(--bs-orange);
+}
+
+.graphic-design, .videography {
+    background-color: var(--bs-primary);
+    border: 4px solid var(--bs-secondary);
+}
+
+.services div {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+}
+
+.services h3 {
+    padding-bottom: 0.2em;
+}
+
+.services p {
+    padding: 0.5em 1em;
+}
+
+/* Styling "Contact" Section */
+.contact {
+    background-color: var(--bs-yellow);
+    border: 4px solid var(--bs-orange);
+    width: 110%;
+    height: 25vh;
+    margin-left: -4.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .wrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 2em;
+}
