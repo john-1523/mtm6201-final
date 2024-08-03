@@ -89,6 +89,7 @@ h3 {
 
 nav button {
     border: none;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 header h1 {
