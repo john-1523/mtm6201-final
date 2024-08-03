@@ -13,7 +13,7 @@ p, nav{
     font-family: 'Roboto Slab', serif;
 }
 
-h1, h2, h3, button, footer p {
+h1, h2, h3, button, footer p, label {
     font-family: 'Paytone One', sans-serif;
     font-weight: normal;
     letter-spacing: 0.2px;
@@ -99,6 +99,8 @@ header h1 {
     top: 70vh;
 }
 
+/* Home Page */
+
 /* Styling "About" Section */
 .about img {
     border: 4px solid var(--bs-yellow);
@@ -133,12 +135,12 @@ header h1 {
 }
 
 /* Styling "Services" Section */
-.web-design, .photography {
+.services-web, .services-photo {
     background-color: var(--bs-yellow);
     border: 4px solid var(--bs-orange);
 }
 
-.graphic-design, .videography {
+.services-graphic, .services-video {
     background-color: var(--bs-primary);
     border: 4px solid var(--bs-secondary);
 }
@@ -189,6 +191,8 @@ header h1 {
     padding: 0 2em;
 }
 
+/* About Page */
+
 /* Styling "Meet the Team" Section */
 .team {
     background-color: var(--bs-primary);
@@ -230,4 +234,65 @@ header h1 {
     width: 30%;
     padding: 1em 0;
     border-radius: 50%;
+}
+
+/* Services Page */
+
+/* Styling "Web Design" & "Photography" Sections */
+.web-design img, .photography img {
+    border: 4px solid var(--bs-yellow);
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.web-design .project-img, .photography .project-img {
+    background-image: url(../images/past-project-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 110%;
+    margin-left: -5%;
+}
+
+.photography .project-img {
+    background-image: url(../images/past-project-3.jpg);
+}
+
+.project-img .shadow {
+    background-color: rgb(0, 0, 0, 25%);
+    height: 25vh;
+}
+
+/* Styling "Graphic Design" & "Videography" Sections */
+.graphic-design img, .videography img {
+    border: 4px solid var(--bs-primary);
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.graphic-design .project-img, .videography .project-img {
+    background-image: url(../images/past-project-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 110%;
+    margin-left: -5%;
+}
+
+.videography .project-img {
+    background-image: url(../images/past-project-4.jpg);
+}
+
+/* Contact Page */
+
+/* Styling "Contact Us" Section */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    border: 2px solid var(--bs-yellow);
+}
+
+.contact-form textarea {
+    height: 20vh;
 }
