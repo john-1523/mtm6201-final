@@ -9,11 +9,11 @@
 /* Custom CSS – Mobile-First Approach */
 
 /* Setting Fonts */
-p, nav{
+p, nav, li {
     font-family: 'Roboto Slab', serif;
 }
 
-h1, h2, h3, button, footer p, label {
+h1, h2, h3, button, .button, footer p, label, .price {
     font-family: 'Paytone One', sans-serif;
     font-weight: normal;
     letter-spacing: 0.2px;
@@ -23,12 +23,39 @@ h3 {
     font-size: 20px;
 }
 
+.button {
+    text-decoration: none;
+}
+
+.price {
+    font-size: 24px;
+}
+
 /* Styling Buttons */
 .btn-solid-white {
     background-color: #fff;
     color: #000;
     border: 2px solid #fff;
     padding: 0.25em 1.5em;
+    transition: 0.1s linear;
+}
+
+.btn-solid-white a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.1s linear;
+}
+
+.btn-solid-white:hover {
+    background-color: rgb(255, 255, 255, 0%);
+    color: #fff;
+    box-shadow: 2px 2px 4px rgb(255, 255, 255, 50%) inset;
+    transition: 0.1s linear;
+}
+
+.btn-solid-white a:hover {
+    color: #fff;
+    transition: 0.1s linear;
 }
 
 .btn-solid-green {
@@ -36,11 +63,13 @@ h3 {
     color: #fff;
     border: 2px solid #000;
     padding: 0.25em 1.5em;
+    transition: 0.1s linear;
 }
 
 .btn-solid-green:hover {
     background-color: var(--bs-secondary);
     box-shadow: 2px 2px 4px #000 inset;
+    transition: 0.1s linear;
 }
 
 .btn-solid-orange {
@@ -48,11 +77,13 @@ h3 {
     color: #fff;
     border: 2px solid #000;
     padding: 0.25em 1.5em;
+    transition: 0.1s linear;
 }
 
 .btn-solid-orange:hover {
     background-color: var(--bs-orange);
     box-shadow: 2px 2px 4px #000 inset;
+    transition: 0.1s linear;
 }
 
 .btn-outline-green {
@@ -60,11 +91,13 @@ h3 {
     color: #000;
     border: 2px solid #000;
     padding: 0.25em 1.5em;
+    transition: 0.1s linear;
 }
 
 .btn-outline-green:hover {
     background-color: var(--bs-secondary);
     box-shadow: 2px 2px 4px #000 inset;
+    transition: 0.1s linear;
 }
 
 .btn-outline-orange {
@@ -72,11 +105,13 @@ h3 {
     color: #000;
     border: 2px solid #000;
     padding: 0.25em 1.5em;
+    transition: 0.1s linear;
 }
 
 .btn-outline-orange:hover {
     background-color: var(--bs-orange);
     box-shadow: 2px 2px 4px #000 inset;
+    transition: 0.1s linear;
 }
 
 /* Styling Header */
@@ -283,6 +318,22 @@ header h1 {
 
 .videography .project-img {
     background-image: url(../images/past-project-4.jpg);
+}
+
+/* Styling "Pricing" Section */
+.web-pricing, .photo-pricing {
+    background-color: var(--bs-yellow);
+    border: 4px solid var(--bs-orange);
+}
+
+.graphic-pricing, .video-pricing {
+    background-color: var(--bs-primary);
+    border: 4px solid var(--bs-secondary);
+}
+
+.package-pricing {
+    background-color: #fff;
+    border: 4px solid var(--bs-yellow);
 }
 
 /* Contact Page */
