@@ -9,7 +9,7 @@
 /* Custom CSS – Mobile-First Approach */
 
 /* Setting Fonts */
-p {
+p, nav{
     font-family: 'Roboto Slab', serif;
 }
 
@@ -19,7 +19,18 @@ h1, h2, h3, button, footer p {
     letter-spacing: 0.2px;
 }
 
+h3 {
+    font-size: 20px;
+}
+
 /* Styling Buttons */
+.btn-solid-white {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    padding: 0.25em 1.5em;
+}
+
 .btn-solid-green {
     background-color: #000;
     color: #fff;
@@ -76,10 +87,15 @@ h1, h2, h3, button, footer p {
     height: 90vh;
 }
 
+nav button {
+    border: none;
+}
+
 header h1 {
     color: var(--bs-yellow);
     text-shadow: 2px 2px 4px #000;
-    margin-top: 60vh;
+    position: absolute;
+    top: 70vh;
 }
 
 /* Styling "About" Section */
@@ -170,4 +186,47 @@ header h1 {
     line-height: 1.4;
     text-align: center;
     padding: 0 2em;
+}
+
+/* Styling "Meet the Team" Section */
+.team {
+    background-color: var(--bs-primary);
+    border: 4px solid var(--bs-secondary);
+    width: 110%;
+    /* height: 25vh; */
+    margin-left: -4.5%;
+}
+
+.team .wrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team img {
+    width: 70%;
+    padding: 1em 0;
+    border-radius: 50%;
+}
+
+/* Styling "Blog" Section */
+.blog p {
+    font-size: 18px;
+}
+
+/* Styling "Testimonials" Section */
+.testimonials {
+    background-color: var(--bs-yellow);
+    border: 4px solid var(--bs-orange);
+    width: 110%;
+    margin-left: -4.5%;
+}
+
+.testimonials img {
+    width: 30%;
+    padding: 1em 0;
+    border-radius: 50%;
 }

@@ -15,85 +15,95 @@
     <!-- FontAwesome Script -->
     <script src="https://kit.fontawesome.com/8bc58f3c90.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header id="home">
-        <div class="container-fluid">
-            <!-- Main Navigation -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="me-2" width="45" alt="black cat logo with text 'Black Cat Media'">Black Cat Media</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
+<body class="bg-black text-white">
+    <header>
+        <div class="banner">
+            <div class="container-fluid">
+                <!-- Main Navigation -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="me-2" width="45" alt="black cat logo with text 'Black Cat Media'">Black Cat Media</a>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars" style="color: #000; font-size: 28px"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-            <h1>Black Cat Chronicles</h1>
+                </nav>
+                <h1 class="display-1 fw-bold px-3">Black Cat<br>Chronicles</h1>
+            </div>
         </div>
     </header>
-    <main>
-        <div class="about">
-            <h2>How Did We Start?</h2>
-            <p>Black Cat Media was founded with a passion for creativity and a desire to help businesses thrive through visual storytelling. We've grown to become a trusted partner in enhancing brands' online presence through our various services.</p>
-            <img src="images/about-1.jpg" class="img-fluid" alt="image of a computer on a desk next to a monstera plant, underneath a shelf with several cameras on it">
-            <h2>Our Mission</h2>
-            <p>We're dedicated to crafting visual experiences that elevate brands and captivate audiences. Through our innovative services, we strive to empower businesses to thrive in the digital world.</p>
-            <img src="images/about-2.jpg" class="img-fluid" alt="image of a group of designers having a meeting">
-        </div>
-        <div class="team">
-            <h2>Meet the Team</h2>
-            <div class="kayla">
-                <img src="images/kayla.jpg" class="img-fluid" alt="image of Kayla Johnston, Black Cat Media's founder">
-                <h3>Kayla Johnston</h3>
-                <p>Kayla is the founder and head designer at Black Cat Media.</p>
+    <div class="site-wrapper p-4">  
+        <main>
+            <section class="about">
+                <h2 class="my-4">How Did We Start?</h2>
+                <p class="my-4">Black Cat Media was founded with a passion for creativity and a desire to help businesses thrive through visual storytelling. We've grown to become a trusted partner in enhancing brands' online presence through our various services.</p>
+                <img src="images/about-1.jpg" class="img-fluid rounded" alt="image of a computer on a desk next to a monstera plant, underneath a shelf with several cameras on it">
+                <h2 class="my-4">Our Mission</h2>
+                <p class="my-4">We're dedicated to crafting visual experiences that elevate brands and captivate audiences. Through our innovative services, we strive to empower businesses to thrive in the digital world.</p>
+                <img src="images/about-2.jpg" class="img-fluid rounded" alt="image of a group of designers having a meeting">
+            </section>
+            <section class="team text-black my-4 p-4">
+                <div class="wrapper d-flex">
+                    <div>
+                        <h2>Meet the Team</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="images/kayla.jpg" class="img-fluid" alt="image of Kayla Johnston, Black Cat Media's founder">
+                            <h3>Kayla Johnston</h3>
+                            <p>Kayla is the founder and head designer at Black Cat Media.</p>
+                        </div>
+                        <div class="col text-center">
+                            <img src="images/astrid.jpg" class="img-fluid" alt="image of the inspiration behind Black Cat Media, a black cat named Astrid">
+                            <h3>Astrid</h3>
+                            <p>Astrid is the mascot and inspiration behind Black Cat Media.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog text-center mb-4">
+                <p>Get inspired by our expert advice on design and digital media!</p>
+                <button class="btn-solid-white rounded">Visit our blog</button>
+            </section>
+            <section class="testimonials text-black text-center">
+                <h2>Testimonials</h2>
+                <img src="images/testimonial.jpg" class="img-fluid" alt="image of a smiling man">
+                <p>“Black Cat Media's team transformed my website into a visual masterpiece! I would love to work with them again."<br>-John Doe</p>
+            </section>
+            <section class="faqs">
+                <h2>Frequently Asked Questions</h2>
+                <h3>What sets Black Cat Media apart from other companies?</h3>
+                <p>We stand out from the competition through our comprehensive suite of services including web design, graphic design, photography, and videography. With a focus on creativity, quality, and client satisfaction, we consistently elevate brands and exceed industry standards.</p>
+                <h3>How far in advance should you book our services?</h3>
+                <h3>Do we require a deposit or upfront payment?</h3>
+                <h3>What happens if you aren't satisfied with the final product?</h3>
+            </section>
+        </main>
+        <footer class="d-flex justify-content-between pt-4">
+            <p>© Black Cat Media 2024</p>
+            <div class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
             </div>
-            <div class="astrid">
-                <img src="images/astrid.jpg" class="img-fluid" alt="image of the inspiration behind Black Cat Media, a black cat named Astrid">
-                <h3>Astrid</h3>
-                <p>Astrid is the mascot and inspiration behind Black Cat Media.</p>
-            </div>
-        </div>
-        <div class="blog">
-            <p>Get inspired by our expert advice on design and digital media!</p>
-            <button>Visit our blog</button>
-        </div>
-        <div class="testimonials">
-            <h2>Testimonials</h2>
-            <img src="images/testimonial.jpg" class="img-fluid" alt="image of a smiling man">
-            <p>“Black Cat Media's team transformed my website into a visual masterpiece! I would love to work with them again."<br>-John Doe</p>
-        </div>
-        <div class="faqs">
-            <h2>Frequently Asked Questions</h2>
-            <h3>What sets Black Cat Media apart from other companies?</h3>
-            <p>We stand out from the competition through our comprehensive suite of services including web design, graphic design, photography, and videography. With a focus on creativity, quality, and client satisfaction, we consistently elevate brands and exceed industry standards.</p>
-            <h2>How far in advance should you book our services?</h2>
-            <h2>Do we require a deposit or upfront payment?</h2>
-            <h2>What happens if you aren't satisfied with the final product?</h2>
-        </div>
-    </main>
-    <footer>
-        <p>© Black Cat Media 2024</p>
-        <div class="socials">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
