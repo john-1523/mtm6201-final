@@ -22,13 +22,13 @@
         <li><a href="#main">Skip to main content</a></li>
     </ul> 
     <header>
-        <div class="banner">
+        <div class="banner" role="banner">
             <div class="container-fluid">
                 <!-- Main Navigation -->
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg" id="nav" role="navigation">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="me-2" width="45" alt="black cat logo with text 'Black Cat Media'">Black Cat Media</a>
-                        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="me-2" width="45" role="img" alt="black cat logo with text 'Black Cat Media'">Black Cat Media</a>
+                        <button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fa-solid fa-bars" style="color: #000; font-size: 28px"></i>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,20 +50,20 @@
                     </div>
                 </nav>
                 <div class="main-heading container-fluid">
-                    <h1 class="display-1 fw-bold px-2">Cross the<br>Cat's Path</h1>
+                    <h1 class="display-1 fw-bold px-2" role="heading" aria-level="1">Cross the<br>Cat's Path</h1>
                 </div>
             </div>
         </div>
     </header>
     <div class="site-wrapper container-fluid p-4">
-        <main>
-            <section class="cta container-fluid">
-                <h2 class="my-4">Bring Good Fortune To Your Brand</h2>
+        <main id="main" role="main">
+            <section class="cta container-fluid" role="region">
+                <h2 class="my-4" role="heading" aria-level="2">Bring Good Fortune To Your Brand</h2>
                 <p class="my-4 pb-4">Ready to transform your brand with expert design and media solutions? Contact Black Cat Media today for a consultation tailored to your needs. Let's bring your vision to life and elevate your business to new heights together.</p>
             </section>
-            <section class="contact-form container-fluid pb-4">
-                <h2 class="my-4">Contact Us</h2>
-                <form method="post">
+            <section class="contact-form container-fluid pb-4" role="region">
+                <h2 class="my-4" role="heading" aria-level="2">Contact Us</h2>
+                <form method="post" role="form">
                     <div class="row">
                         <div class="col-md">
                             <div class="fname mb-4 mb-md-0">
@@ -90,11 +90,11 @@
                         <label for="message" class="mb-2">Message</label><br>
                         <textarea name="message" id="message" class="rounded"></textarea>
                     </div>
-                    <button type="submit" class="btn-solid-white rounded">Submit</button>
+                    <button type="submit" role="button" class="btn-solid-white rounded">Submit</button>
                 </form>
             </section>
         </main>
-        <footer class="container-fluid d-flex justify-content-between pt-4">
+        <footer class="container-fluid d-flex justify-content-between pt-4" role="contentinfo">
             <p>© Black Cat Media 2024</p>
             <div class="socials">
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
