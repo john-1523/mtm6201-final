@@ -257,8 +257,6 @@ header h1 {
 }
 
 .team img {
-    width: 70%;
-    padding: 1em 0;
     border-radius: 50%;
 }
 
@@ -276,8 +274,6 @@ header h1 {
 }
 
 .testimonials img {
-    width: 35%;
-    padding: 1em 0;
     border-radius: 50%;
 }
 
@@ -399,6 +395,10 @@ header h1 {
         margin-left: -3%;
     }
 
+    .services-web, .services-graphic, .services-photo, .services-video {
+        height: 300px;
+    }
+
     .services-photo {
         background-color: var(--bs-primary);
         border: 4px solid var(--bs-secondary);
@@ -428,16 +428,8 @@ header h1 {
         margin-left: -3%;
     }
 
-    .team img {
-        width: 50%;
-    }
-
     .team p {
         width: 70%;
-    }
-
-    .testimonials img {
-        width: 25%;
     }
 
     /* Services Page */
@@ -511,14 +503,14 @@ header h1 {
         height: 30vh;
     }
 
-    /* .team {
-        height: 60vh;
-    } */
-
     /* Services Page */
     .project-img, .shadow {
         height: 50vh !important;
     }
+
+    .web-pricing, .graphic-pricing, .photo-pricing, .video-pricing, .package-pricing {
+        height: 40vh;
+    } 
 
     /* Contact Page */
     .contact-form input {
